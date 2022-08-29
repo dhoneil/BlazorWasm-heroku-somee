@@ -1,6 +1,11 @@
+using BlazorWasmForHeroku.Shared;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+GlobalVariables.CONNECTIONSTRING = builder.Configuration.GetConnectionString("SomeeConnection");
+builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(GlobalVariables.CONNECTIONSTRING), ServiceLifetime.Transient);
 
 // Add services to the container.
 

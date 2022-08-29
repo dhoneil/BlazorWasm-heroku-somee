@@ -1,0 +1,14 @@
+﻿@page "/branch"
+
+<h3>Branches</h3>
+
+
+<ul>
+	@if (BranchList!=null)
+   {
+	   foreach (var item in BranchList)
+	   {
+		   <li>@item.BranchName</li>
+	   }
+   }
+</ul>

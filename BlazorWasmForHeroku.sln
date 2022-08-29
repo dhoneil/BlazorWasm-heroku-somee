@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmForHeroku.Server", "BlazorWasmForHeroku\Server\BlazorWasmForHeroku.Server.csproj", "{C902A137-67E3-4CD0-9D52-6FB113867B56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmForHeroku.Server", "BlazorWasmForHeroku\Server\BlazorWasmForHeroku.Server.csproj", "{C902A137-67E3-4CD0-9D52-6FB113867B56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmForHeroku.Client", "BlazorWasmForHeroku\Client\BlazorWasmForHeroku.Client.csproj", "{1D3CF278-A8BA-407C-AA1F-72CCB7A679F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmForHeroku.Client", "BlazorWasmForHeroku\Client\BlazorWasmForHeroku.Client.csproj", "{1D3CF278-A8BA-407C-AA1F-72CCB7A679F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmForHeroku.Shared", "BlazorWasmForHeroku\Shared\BlazorWasmForHeroku.Shared.csproj", "{D6F3328D-578D-4A39-AFA7-33F3D9F21A4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmForHeroku.Shared", "BlazorWasmForHeroku\Shared\BlazorWasmForHeroku.Shared.csproj", "{D6F3328D-578D-4A39-AFA7-33F3D9F21A4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
