@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 GlobalVariables.CONNECTIONSTRING = builder.Configuration.GetConnectionString("SomeeConnection");
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(GlobalVariables.CONNECTIONSTRING), ServiceLifetime.Transient);
+builder.Services.AddTelerikBlazor();
 
 // Add services to the container.
 

@@ -3,12 +3,24 @@
 <h3>Branches</h3>
 
 
-<ul>
-	@if (BranchList!=null)
-   {
-	   foreach (var item in BranchList)
-	   {
-		   <li>@item.BranchName</li>
-	   }
-   }
-</ul>
+
+<TelerikGrid Data="BranchList" AutoGenerateColumns="false" 
+    EditMode="GridEditMode.Inline"
+    OnCreate="Create"
+    OnUpdate="Update"
+    ConfirmDelete="true"
+    OnDelete="Delete" Height="100%" Width="100%">
+	<GridToolBar>
+        <GridCommandButton Command="Add" Icon="add" Primary="true">Add Item</GridCommandButton>
+        <GridCommandButton Command="ExcelExport" Icon="file-excel">Export to Excel</GridCommandButton>
+        <GridSearchBox DebounceDelay="200" Class="ml-auto"></GridSearchBox>
+    </GridToolBar>
+	<GridColumns>
+        <GridColumn Field="@(nameof(Branch.BranchName))" Title="Branch" />
+        <GridCommandColumn Width="150px" Locked="true" Title="Action">
+            <GridCommandButton Command="Save" Icon="save" ShowInEdit="true"></GridCommandButton>
+            <GridCommandButton Command="Edit" Icon="pencil"></GridCommandButton>
+            <GridCommandButton Command="Cancel" Icon="cancel" ShowInEdit="true"></GridCommandButton>
+        </GridCommandColumn>
+    </GridColumns>
+</TelerikGrid>
